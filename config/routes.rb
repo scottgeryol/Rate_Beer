@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     patch "/beers/:id" => "beer#update"
     delete "/beers/:id" => "beer#destroy"
 
-    get "/brewery" => "bewery#index"
+    get "/brewery" => "brewery#index"
   end
 end

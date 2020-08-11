@@ -1,0 +1,10 @@
+@brewery.map do |brewery|
+  {
+    id: brewery.id,
+    name: brewery.name,
+    location: brewery.location,
+    beer_id: brewery.beer_id,
+    rating: brewery.rating,
+    website: brewery.website,
+  }
+end
