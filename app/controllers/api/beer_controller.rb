@@ -3,4 +3,16 @@ class Api::BeerController < ApplicationController
     @beers = Beer.all
     render "index.json.jb"
   end
+
+  def create
+    @beer = Beer.new(
+      name: params[:name],
+      brewery: params[:brewery],
+      style: params[:style],
+      abv: params[:abv],
+      # rating: params[:rating],
+    )
+    @beer.save
+    render "show.json.jb"
+  end
 end
