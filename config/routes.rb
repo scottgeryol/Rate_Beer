@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     get "/brewery" => "brewery#index"
     post "/brewery" => "brewery#create"
     get "/brewery/:id" => "brewery#show"
+    patch "/brewery/:id" => "brewery#update"
+    delete "/brewery/:id" => "brewery#destroy"
   end
 end
