@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     delete "/beers/:id" => "beer#destroy"
 
     get "/brewery" => "brewery#index"
+    post "/brewery" => "brewery#create"
+    get "/brewery/:id" => "brewery#show"
   end
 end
