@@ -30,4 +30,10 @@ class Api::BeerController < ApplicationController
     @beer.save
     render "show.json.jb"
   end
+
+  def destroy
+    @beer = Beer.find_by(id: params[:id])
+    @beer.destroy
+    render json: { message: "Beer was successfully destroyed" }
+  end
 end
