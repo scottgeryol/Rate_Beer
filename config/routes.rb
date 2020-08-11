@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     get "/beers/:id" => "beer#show"
     patch "/beers/:id" => "beer#update"
     delete "/beers/:id" => "beer#destroy"
+
+    get "/brewery" => "bewery#index"
   end
 end
