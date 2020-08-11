@@ -4,5 +4,5 @@
   brewery: @beer.brewery,
   style: @beer.style,
   abv: @beer.abv,
-  rating: @beer.rating,
+# rating: @beer.rating,
 }
