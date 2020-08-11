@@ -20,4 +20,14 @@ class Api::BeerController < ApplicationController
     @beer = Beer.find_by(id: params[:id])
     render "show.json.jb"
   end
+
+  def update
+    @beer = Beer.find_by(id: params[:id])
+    @beer.name = params[:name] || @beer.name
+    @beer.brewery = params[:brewery] || @beer.brewery
+    @beer.style = params[:style] || @beer.style
+    @beer.abv = params[:abv] || @beer.abv
+    @beer.save
+    render "show.json.jb"
+  end
 end
