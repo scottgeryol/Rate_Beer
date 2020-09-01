@@ -10,7 +10,7 @@ class Api::BeerController < ApplicationController
       brewery: params[:brewery],
       style: params[:style],
       abv: params[:abv],
-      # rating: params[:rating],
+      rating: params[:rating],
     )
     @beer.save
     render "show.json.jb"

@@ -6,5 +6,6 @@
     style: beer.style,
     abv: beer.abv,
     rating: beer.rating,
+    image: beer.image,
   }
 end
